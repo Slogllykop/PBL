@@ -1,4 +1,7 @@
-
+:root {
+    --main: black;
+    --accent: white;
+}
 
 *,*::after,*::before {
     box-sizing: border-box;
@@ -13,6 +16,11 @@
     left: 0;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--main);
 }
 
+.navlinks {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: var(--accent)
+}
