@@ -9,5 +9,8 @@
 .navbar {
     height: 10%;
     width: 100%;
-    left: 0
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
