@@ -19,6 +19,7 @@
     --175: 1.75rem
 }
 
+
 /* MISC */
 
 *,*::after,*::before {
@@ -60,6 +61,39 @@ body{
     background: var(--light-bg);
     overflow-x: hidden
 }
+
+/* Pre loader */
+
+#preloader{
+    background-color:var(--light-bg);
+    position: fixed;
+    display: flex;
+    height: 100vh;width: 100%;
+    z-index: 999999999
+}
+
+#preloader::before{
+    content: '';
+    background:url(../public/media/pizza/preloader.png) no-repeat center center;
+    position: fixed;
+    width: 100%;height: 100vh;
+    background-size: 5rem;
+    animation-name: preloader;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 9999999999
+} 
+
+@keyframes preloader{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+    transform: rotate(360deg)
+    }
+}
+
 
 /* Navbar start */
 /* Header */

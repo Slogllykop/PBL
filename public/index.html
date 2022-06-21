@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="../src/index.css">
 </head>
 <body>
+<!-- Pre loader -->
+
+<div id="preloader"></div>
+
+<!-- Navbar Start-->
+
+  <!-- Header -->
     <header class="header">
         <section class="flex">
             <a href="#home" class="logo"><span class="material-icons">local_pizza</span>Greedy Pizza</a>
@@ -26,6 +33,10 @@
             </div>
         </section>
     </header>
+
+  <!-- Header windows -->
+
+    <!-- Account -->
     <div class="user-account">
         <section>
             <div id="close-account"><span class="material-icons">close</span></div>
@@ -56,6 +67,8 @@
             </div>
         </section>
     </div>
+
+    <!-- Orders -->
     <div class="my-orders">
         <section>
             <div id="close-orders"><span class="material-icons">close</span></div>
@@ -82,6 +95,30 @@
             </div>
         </section>
     </div>
+
+    <!-- Cart -->
+    <div class="shopping-cart">
+        <section>
+            <div id="close-cart"><span class="material-icons">close</span></div>
+            <div class="box">
+                
+            </div>
+        </section>
+    </div>
+
+<!-- Navbar End -->
+
+<!-- Scripts -->
+
+    <!-- preloader -->
+    <script>
+        let loader = document.getElementById('preloader');
+        window.addEventListener('load',function(){
+            loader.style.display = 'none';
+        })
+    </script>
+
+    <!-- main -->
     <script src="../src/index.js"></script>
 </body>
 </html>
