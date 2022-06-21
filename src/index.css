@@ -127,9 +127,9 @@ section{
     color: var(--black)
 }
 
-.header .flex .logo span {
-    font-size: var(--150);
-    color: var(--black)
+.header .flex .logo img {
+    width: var(--150);height: auto;
+
 }
 
 .header .flex .navbar a{
