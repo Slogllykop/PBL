@@ -7,6 +7,7 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
+
 // User account toggle
 let acc = document.querySelector('.user-account');
 document.querySelector('#user-btn').onclick = () =>{
@@ -14,4 +15,14 @@ document.querySelector('#user-btn').onclick = () =>{
 }
 document.querySelector('#close-account').onclick = () =>{
     acc.classList.remove('active');
+}
+
+
+// My orders toggle
+let orders = document.querySelector('.my-orders');
+document.querySelector('#order-btn').onclick = () =>{
+    orders.classList.add('active');
+}
+document.querySelector('#close-orders').onclick = () =>{
+    orders.classList.remove('active');
 }

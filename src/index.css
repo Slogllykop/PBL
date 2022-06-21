@@ -2,14 +2,13 @@
 
 
 :root{
-    /* #e74c3c */
     --accent:#347deb;
     --black:#333;
     --white:#fff;
     --light-bg:#f5f5f5;
     --light-color:#666;
-    --border:.var(--100) solid var(--light-color);
-    --box-shadow:0 .5rem var(--100) rgba(0,0,0,.1);
+    --border:0.1rem solid var(--accent);
+    --box-shadow:0 var(--50) var(--100) rgba(0,0,0,.1);
     /* margins */
     --25: 0.25rem;
     --50: 0.5rem;
@@ -21,6 +20,7 @@
 }
 
 /* MISC */
+
 *,*::after,*::before {
     box-sizing: border-box;
     margin: 0;
@@ -61,6 +61,7 @@ body{
     overflow-x: hidden
 }
 
+/* Navbar start */
 /* Header */
 
 section{
@@ -88,6 +89,7 @@ section{
     font-size: var(--125);
     display: flex;
     align-items: center;
+    user-select: none;
     color: var(--black)
 }
 
@@ -99,6 +101,7 @@ section{
 .header .flex .navbar a{
     margin: 0 var(--50);
     font-size: var(--75);
+    user-select: none;
     color: var(--black)
 }
 
@@ -110,6 +113,7 @@ section{
 .header .flex .icons div {
     font-size: var(--125);
     color: var(--light-color);
+    user-select: none;
     margin-left: 0rem
 }
 
@@ -124,6 +128,7 @@ section{
 #menu-btn{
     display: none
 }
+
 
 /* User account | Login | Register */
 
@@ -143,6 +148,7 @@ section{
 
 .user-account #close-account{
     text-align: right;
+    user-select: none;
     margin-bottom: var(--100)
 }
 
@@ -244,6 +250,72 @@ section{
 }
 
 
+/* My orders */
+
+.my-orders{
+    position: fixed;
+    top: 0;right:-200%;
+    width: 30%;
+    z-index: 110000;
+    background-color: var(--light-bg);
+    border-left: var(--border);
+    height: 100vh;
+    overflow-y: scroll
+}
+
+.my-orders.active{
+    right: 0;
+}
+
+.my-orders #close-orders{
+    text-align: right;
+    user-select: none;
+    margin-bottom: var(--25)
+}
+
+.my-orders #close-orders span.material-icons {
+    font-size: var(--150);
+    color: var(--accent)
+
+}
+
+.my-orders #close-orders span.material-icons:hover{
+    color: var(--black)
+}
+
+.my-orders .title{
+    text-align: center;
+    color: var(--black);
+    font-size: var(--100)
+}
+
+.my-orders .box{
+    background-color: var(--white);
+    border-radius: var(--25);
+    padding:var(--25) var(--50);
+    margin:var(--75) 0;
+    box-shadow: var(--box-shadow)
+}
+
+.my-orders .box p{
+    margin: var(--25) 0;
+    font-size: var(--50);
+    font-weight: bold;
+    color:var(--light-color);
+    line-height: 1.25
+}
+
+.my-orders .box p span{
+    color: var(--black);
+    font-weight: normal
+}
+
+/* Navbar End */
+
+
+
+
+
 
 
 
@@ -281,10 +353,17 @@ section{
         display: block;
         margin: var(--100)
     }
+    .my-orders{
+        width:50%
+    }
 }
 
 @media (max-width: 450px) {
     html{
         font-size: 1em
+    }
+    .my-orders{
+        width: 100%;
+        border-left: 0
     }
 }
