@@ -289,6 +289,7 @@ section{
 
 .btn{
     display: block;
+    user-select: none;
     width: 100%;
     margin-top: var(--25);
     border-radius: var(--25);
@@ -518,6 +519,7 @@ section{
 }
 
 .home-bg .home .slide-container .slide .image img{
+    user-select: none;
     width: 100%
 }
 
@@ -537,6 +539,7 @@ section{
 
 .home-bg .home .slide-container .slide .content .material-symbols-outlined{
     height: auto;width: var(--175);
+    user-select: none;
     line-height: calc(var(--100)*1.75);
     font-size: calc(var(--100)*2);
     color:var(--black);
@@ -552,6 +555,54 @@ section{
 }
 
 
+/* About us  */
+
+.heading{
+    text-align: center;
+    margin-bottom: var(--100);
+    font-size: var(--150);
+    color: var(--black)
+}
+
+.about .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:var(--50);
+    align-items: flex-start;
+    justify-content: center
+}
+
+.about .box-container .box{
+    background-color: var(--white);
+    width: 13rem;height: 90vh;
+    border-radius: var(--50);
+    padding:var(--100);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center
+}
+
+.about .box-container .box h3{
+    user-select: none;
+    font-size: var(--125);
+    color: var(--black)
+}
+
+.about .box-container .box .material-icons-outlined{
+    font-size: 15vw;
+    user-select: none;
+    color: var(--accent)
+}
+
+.about .box-container .box p{
+    padding: var(--50) 0;
+    line-height: 1.2;
+    font-size: var(--75);
+    color: var(--light-color)
+}
 
 
 
@@ -626,6 +677,21 @@ section{
     }
     .home-bg .home .slide-container .slide{
         transform: translateY(-10%)
+    }
+    .about .box-container .box{
+        width: 90vw
+    }
+    .about .box-container .box .material-icons-outlined{
+        font-size: 30vw;
+    }
+    .about .box-container .box h3{
+        font-size: calc(var(--125)*2);
+    }
+    .about .box-container .box p{
+        font-size: var(--150);
+    }
+    .heading{
+        font-size: calc(var(--150)*1.5);
     }
 }
 
