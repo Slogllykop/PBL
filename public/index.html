@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="../public/media/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Greedy Pizza</title>
     <link rel="stylesheet" href="../src/index.css">
 </head>
@@ -109,12 +110,12 @@
             <div id="close-cart"><span class="material-icons">close</span></div>
             <div class="box">
                 <a href="#" class="material-icons">close</a>
-                <img src="media/pizza/v-logo.png" class="indicator">
+                <img src="media/v-logo.png" class="indicator">
                 <img src="media/pizza/veg/v4.png">
                 <div class="content">
                     <p>Pizza <span>( Rs.199/- x 1 )</span></p>
                     <form action="" method="post">
-                        <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                        <input type="number" class="qty" name="qty" min="1" value="1" max="100">
                         <button type="submit" class="material-icons-outlined" name="update_qty">edit_note</button>
                     </form>
                 </div>
@@ -122,7 +123,7 @@
 
             <div class="box">
                 <a href="#" class="material-icons">close</a>
-                <img src="media/pizza/nv-logo.png" class="indicator">
+                <img src="media/nv-logo.png" class="indicator">
                 <img src="media/pizza/non-veg/nv3.png">
                 <div class="content">
                     <p>Pizza <span>( Rs.299/- x 2 )</span></p>
@@ -135,12 +136,12 @@
 
             <div class="box">
                 <a href="#" class="material-icons">close</a>
-                <img src="media/pizza/v-logo.png" class="indicator">
+                <img src="media/v-logo.png" class="indicator">
                 <img src="media/pizza/beverages/coca-cola.png">
                 <div class="content">
                     <p>Coca Cola <span>( Rs.75/- x 1 )</span></p>
                     <form action="" method="post">
-                        <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                        <input type="number" class="qty" name="qty" min="1" value="1" max="100">
                         <button type="submit" class="material-icons-outlined" name="update_qty">edit_note</button>
                     </form>
                 </div>
@@ -150,8 +151,49 @@
         </section>
     </div>
 
-
 <!-- Navbar End -->
+
+
+<!-- Home -->
+    <div class="home-bg">
+        <section class="home">
+            <div class="slide-container">
+                <div class="slide active">
+                    <div class="image">
+                        <img src="../public/media/pizza/non-veg/nv3.png">
+                    </div>
+                    <div class="content">
+                        <h3>Classic Pepperoni</h3>
+                        <span class="material-symbols-outlined" onclick="prev()">arrow_left</span>
+                        <span class="material-symbols-outlined" onclick="next()">arrow_right</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image">
+                        <img src="../public/media/pizza/veg/v3.png">
+                    </div>
+                    <div class="content">
+                        <h3>Classic Veg</h3>
+                        <span class="material-symbols-outlined" onclick="prev()">arrow_left</span>
+                        <span class="material-symbols-outlined" onclick="next()">arrow_right</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image">
+                        <img src="../public/media/pizza/veg/v1.png">
+                    </div>
+                    <div class="content">
+                        <h3>Plain Cheese</h3>
+                        <span class="material-symbols-outlined" onclick="prev()">arrow_left</span>
+                        <span class="material-symbols-outlined" onclick="next()">arrow_right</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
 <!-- Scripts -->
 
