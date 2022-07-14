@@ -679,16 +679,18 @@ section{
         transform: translateY(-10%)
     }
     .about .box-container .box{
+        padding: var(--50);
         width: 90vw
     }
     .about .box-container .box .material-icons-outlined{
         font-size: 30vw;
     }
     .about .box-container .box h3{
-        font-size: calc(var(--125)*2);
+        font-size: calc(var(--125)*1.5)
     }
     .about .box-container .box p{
-        font-size: var(--150);
+        font-size: var(--125);
+        padding: var(--25) 0
     }
     .heading{
         font-size: calc(var(--150)*1.5);
