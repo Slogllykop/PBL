@@ -625,6 +625,12 @@ section{
         font-size: calc(var(--100)*2)
     }
     .home-bg .home .slide-container .slide{
-        transform: translateY(-5%)
+        transform: translateY(-10%)
+    }
+}
+
+@media (max-width: 323px) {
+    .home-bg .home .slide-container .slide{
+        transform: translateY(-2%)
     }
 }
