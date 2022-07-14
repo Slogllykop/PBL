@@ -443,6 +443,7 @@ section{
 }
 
 .box img.indicator{
+    display: block;
     position: absolute;
     top:var(--25);left:var(--25);
     width: var(--75);height: auto
