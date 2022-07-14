@@ -442,6 +442,12 @@ section{
     color: var(--white)
 }
 
+.box img.indicator{
+    position: absolute;
+    top:var(--25);left:var(--25);
+    width: var(--75);height: auto
+}
+
 /* Navbar End */
 
 
