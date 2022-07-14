@@ -16,7 +16,7 @@
 
 <!-- Navbar Start-->
 
-  <!-- Header -->
+<!-- Header -->
     <header class="header">
         <section class="flex">
             <a href="#home" class="logo">
@@ -34,11 +34,12 @@
                 <div id="user-btn" class="material-icons">person</div>
                 <div id="order-btn" class="material-icons">inventory</div>
                 <div id="cart-btn" class="material-icons">shopping_cart<span>(3)</span></div>
+                <span class="material-icons" id="theme">dark_mode</span>
             </div>
         </section>
     </header>
 
-  <!-- Header windows -->
+<!-- Header windows -->
 
     <!-- Account -->
     <div class="user-account">
@@ -60,6 +61,7 @@
                     <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
                     <input type="submit" value="Login now" name="login" class="btn">
                 </form>
+
                 <form action="" method="post">
                     <h3>REGISTER</h3>
                     <input type="text" name="name" required class="box" placeholder="Enter your name" maxlength="20">
@@ -87,6 +89,7 @@
                 <p>Total price: <span>Rs.1450/- </span></p>
                 <p>Payment status: <span style="color:var(--accent)">Pending</span></p>
             </div>
+
             <div class="box">
                 <p>Placed on: <span>21/06/2022</span></p>
                 <p>Name: <span>Indraneel Sinare</span></p>
@@ -147,19 +150,16 @@
         </section>
     </div>
 
-    
 
 <!-- Navbar End -->
 
 <!-- Scripts -->
 
     <!-- preloader -->
-    <script>
-        let loader = document.getElementById('preloader');
-        window.addEventListener('load',function(){
-            loader.style.display = 'none';
-        })
-    </script>
+    <script src="../src/preloader.js"></script>
+
+    <!-- dark mode  -->
+    <script src="../src/darkModeToggle.js"></script>
 
     <!-- main -->
     <script src="../src/index.js"></script>

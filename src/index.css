@@ -163,6 +163,24 @@ section{
     display: none
 }
 
+/* theme */
+#theme{
+    font-size: var(--125);
+    user-select: none;
+    color: var(--light-color)
+}
+
+.dark-theme{
+    --black:#ebebeb;
+    --white:#2c2c2c;
+    --light-bg:#363636;
+    --light-color:#fff
+}
+
+#theme:hover{
+    color: var(--accent)
+}
+
 
 /* User account | Login | Register */
 
@@ -426,6 +444,7 @@ section{
     padding: var(--25);
     font-size: var(--50);
     color: var(--black);
+    background-color: var(--light-bg);
     width: calc(var(--150)*2)
 }
 
