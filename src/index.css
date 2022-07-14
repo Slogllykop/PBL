@@ -276,6 +276,7 @@ section{
     border-radius: var(--25);
     padding: var(--25) var(--100);
     color:var(--white);
+    text-align: center;
     background-color:var(--accent)
 }
 
@@ -344,6 +345,103 @@ section{
     font-weight: normal
 }
 
+
+/* Shopping cart  */
+
+.shopping-cart{
+    position: fixed;
+    top: 0;right:-110%;
+    width: 35%;
+    z-index: 110000;
+    background-color: var(--light-bg);
+    border-left: var(--border);
+    height: 100vh;
+    overflow-y: scroll
+}
+
+.shopping-cart.active{
+    right: 0
+}
+
+.shopping-cart #close-cart{
+    text-align: right;
+    user-select: none;
+    margin-bottom: var(--25)
+}
+
+.shopping-cart #close-cart span.material-icons {
+    font-size: var(--150);
+    color: var(--accent)
+}
+
+.shopping-cart #close-cart span.material-icons:hover{
+    color: var(--black)
+}
+
+.shopping-cart .box{
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: var(--25);
+    box-shadow: var(--box-shadow);
+    padding: var(--75);
+    background-color:var(--white);
+    margin: var(--75) 0;
+    gap: var(--25)
+}
+
+.shopping-cart .box .material-icons{
+    position: absolute;
+    top: var(--25);right: var(--25);
+    font-size: var(--75);
+    color: var(--accent)
+}
+
+.shopping-cart .box .material-icons:hover{
+    color: var(--black);
+}
+
+.shopping-cart .box img{
+    width: 2.75rem
+}
+
+.shopping-cart .box .content p{
+    font-size: var(--75);
+    color: var(--light-color)
+}
+
+.shopping-cart .box .content p span{
+    color: var(--accent)
+}
+
+.shopping-cart .box .content form{
+    margin-top: var(--75);
+    display: flex;
+    gap: var(--50)
+}
+
+.shopping-cart .box .content form .qty{
+    border: var(--border);
+    border-radius: var(--25);
+    padding: var(--25);
+    font-size: var(--50);
+    color: var(--black);
+    width: calc(var(--150)*2)
+}
+
+.shopping-cart .box .content form .material-icons-outlined{
+    width: var(--150);
+    font-size: var(--100);
+    border-radius: var(--25);
+    color: var(--black);
+    background-color: var(--light-bg)
+}
+
+.shopping-cart .box .content form .material-icons-outlined:hover{
+    background-color: var(--black);
+    color: var(--white)
+}
+
 /* Navbar End */
 
 
@@ -390,6 +488,12 @@ section{
     .my-orders{
         width:50%
     }
+    .shopping-cart{
+        width:50%
+    }
+    .shopping-cart .box .content form .qty{
+        width: calc(var(--175)*1.75)
+    }
 }
 
 @media (max-width: 450px) {
@@ -397,6 +501,10 @@ section{
         font-size: 1em
     }
     .my-orders{
+        width: 100%;
+        border-left: 0
+    }
+    .shopping-cart{
         width: 100%;
         border-left: 0
     }

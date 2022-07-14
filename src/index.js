@@ -5,6 +5,8 @@ document.querySelector('#menu-btn').onclick = () =>{
 }
 window.onscroll = () =>{
     navbar.classList.remove('active');
+    cart.classList.remove('active');
+    orders.classList.remove('active');
 }
 
 
@@ -25,4 +27,13 @@ document.querySelector('#order-btn').onclick = () =>{
 }
 document.querySelector('#close-orders').onclick = () =>{
     orders.classList.remove('active');
+}
+
+// Shopping cart toggle
+let cart = document.querySelector('.shopping-cart');
+document.querySelector('#cart-btn').onclick = () =>{
+    cart.classList.add('active');
+}
+document.querySelector('#close-cart').onclick = () =>{
+    cart.classList.remove('active');
 }
