@@ -630,6 +630,7 @@ section{
 
 .menu .box-container .box .price{
     background-color: var(--black);
+    user-select: none;
     border-radius: var(--25);
     padding:0 var(--25);
     font-size: var(--50);
@@ -643,6 +644,7 @@ section{
 }
 
 .menu .box-container .box img{
+    user-select: none;
     width: 100%
 }
 
@@ -654,6 +656,8 @@ section{
 
 .menu .box-container .box form{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap:var(--25)
 }
 
@@ -676,11 +680,18 @@ section{
 
 .menu .heading-indicator{
     display: flex;
+    user-select: none;
     flex-direction: row-reverse;
     gap: var(--25);
     margin: var(--125) 0;
     justify-content: center;
     align-items: center
+}
+
+.menu .box-container .box .btn{
+    font-size: var(--50);
+    padding: var(--75) 0;
+    transform: translateY(6%);
 }
 
 .menu .heading-indicator h3{
@@ -691,6 +702,12 @@ section{
 .menu .heading-indicator img{
     width: var(--100)
 }
+
+
+
+
+
+
 
 
 
