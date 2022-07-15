@@ -540,6 +540,7 @@ section{
 .home-bg .home .slide-container .slide .content h1{
     color:var(--accent);
     font-size: var(--125);
+    user-select: none;
     margin-bottom: var(--25);
     box-shadow: var(--box-shadow)
 }
