@@ -604,10 +604,93 @@ section{
     color: var(--light-color)
 }
 
+/* Menu */
 
+.menu .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:var(--50);
+    align-items: flex-start;
+    justify-content: center
+}
 
+.menu .box-container .box{
+    background-color: var(--white);
+    width: 10rem;height: auto;
+    border-radius: var(--50);
+    padding:var(--100);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center
+}
 
+.menu .box-container .box .price{
+    background-color: var(--black);
+    border-radius: var(--25);
+    padding:0 var(--25);
+    font-size: var(--50);
+    position: absolute;
+    top:var(--50);right: var(--50);
+    color: var(--white)
+}
 
+.menu .box-container .box .price span{
+    font-size: var(--75)
+}
+
+.menu .box-container .box img{
+    width: 100%
+}
+
+.menu .box-container .box .name{
+    font-size: var(--100);
+    margin: var(--25) 0;
+    color: var(--black)
+}
+
+.menu .box-container .box form{
+    display: flex;
+    gap:var(--25)
+}
+
+.menu .box-container .box form .qty{
+    width:calc(var(--100)*3);
+    border: var(--border);
+    padding: var(--50);
+    margin-top: var(--50);
+    border-radius: var(--25);
+    font-size: var(--75);
+    color: var(--black);
+    background-color: var(--light-bg)
+}
+
+.menu .box-container .box .indicator{
+    position: absolute;
+    top:var(--50);left: var(--50);
+    width:var(--125)
+}
+
+.menu .heading-indicator{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: var(--25);
+    margin: var(--125) 0;
+    justify-content: center;
+    align-items: center
+}
+
+.menu .heading-indicator h3{
+    color: var(--black);
+    font-size: var(--100)
+}
+
+.menu .heading-indicator img{
+    width: var(--100)
+}
 
 
 
@@ -657,6 +740,9 @@ section{
     }
     .home-bg .home .slide-container .slide .content{
         flex:1 1 calc(var(--100)*10)
+    }
+    .menu .box-container .box{
+        width: 15rem
     }
 }
 
