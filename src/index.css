@@ -128,7 +128,7 @@ section{
 }
 
 .header .flex .logo img {
-    width: var(--150);height: auto;
+    width: var(--150);height: auto
 
 }
 
@@ -583,7 +583,7 @@ section{
 
 .about .box-container .box{
     background-color: var(--white);
-    width: 13rem;height: 90vh;
+    width: 13rem;height: auto;
     border-radius: var(--50);
     padding:var(--100);
     box-shadow: var(--box-shadow);
@@ -699,7 +699,7 @@ section{
 .menu .box-container .box .btn{
     font-size: var(--50);
     padding: var(--75) 0;
-    transform: translateY(6%);
+    transform: translateY(6%)
 }
 
 .menu .heading-indicator h3{
@@ -791,11 +791,10 @@ section{
         transform: translateY(-10%)
     }
     .home-bg .home .slide-container .slide .content .material-symbols-outlined{
-        font-size: calc(var(--100)*2.2);
+        font-size: calc(var(--100)*2.2)
     }
     .about .box-container .box{
         padding: var(--50);
-        height: 70vh;
         width: 90vw
     }
     .about .box-container .box .material-icons-outlined{
