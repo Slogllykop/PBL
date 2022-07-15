@@ -537,6 +537,13 @@ section{
     line-height: 1
 }
 
+.home-bg .home .slide-container .slide .content h1{
+    color:var(--accent);
+    font-size: var(--125);
+    margin-bottom: var(--25);
+    box-shadow: var(--box-shadow)
+}
+
 .home-bg .home .slide-container .slide .content .material-symbols-outlined{
     height: auto;width: var(--175);
     user-select: none;
